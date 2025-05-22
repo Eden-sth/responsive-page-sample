@@ -6,6 +6,40 @@
   padding: 20px;
 }
 
+/* 별도 추가?? */
+.sorting {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+.sorting li {
+}
+.sorting li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 2.6rem;
+  font-size: 1.1rem;
+  color: #aaa;
+  line-height: 1;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.sorting li:hover a {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 2.3);
+}
+.sorting li.on a {
+  color: #fff;
+  background: linear-gradient(to top, #666, #eee);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/* 여기까지 */
+
 .main ul {
   position: relative;
   width: 100%;
@@ -15,7 +49,6 @@
   align-items: center;
   gap: 20px;
 }
-
 .main > ul > li > a {
   width: 100px;
   height: 26px;
