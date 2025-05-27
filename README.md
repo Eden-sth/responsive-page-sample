@@ -55,3 +55,17 @@
 
 - git fetch
 - git merge origin/main
+
+*
+
+## 파일명 이름 다른 경우 다시 연결할때
+
+바탕화면에 새폴더 생성
+github 내 코드 -> https 주소 복사
+터미널 오픈
+
+- git clone [복사한 주소]
+- git add .
+- git commit -m "커밋 내용"
+- git push origin main
+  /
