@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.top-banner {
+.carousel {
   /* grid-column-gap: 15px; */
   /* grid-row-gap: 5px; */
   background-color: #868686;
@@ -13,13 +13,13 @@
   flex-direction: column;
   align-items: center;
 }
-.top-banner > ul {
+.carousel > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   gap: 33px;
 }
-.top-banner > ul > li {
+.carousel > ul > div {
   /* display: flex; */
   flex-direction: row;
   font-size: 2rem;

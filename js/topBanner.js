@@ -1,4 +1,5 @@
-const carousel = document.querySelector(".carousel");
+const carousel = document.querySelectorAll(".carousel");
+const carouselWrap = document.querySelector(".carousel-wrap"); // 요소 선택 추가
 
 const carouselKeyframes = {
   transform: ["translateX(0px)", "translateX(-100px)"],
@@ -15,9 +16,9 @@ carousel.forEach((carousel) => {
   animations.push(animation);
 });
 
-carouselWrap.addEventLister("mouseover", () => {
+carouselWrap.addEventListener("mouseover", () => {
   animations.forEach((animation) => animation.pause());
 });
-carouselWrap.addEventLister("mouseout", () => {
+carouselWrap.addEventListener("mouseout", () => {
   animations.forEach((animation) => animation.play());
 });
